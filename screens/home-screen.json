@@ -1,0 +1,166 @@
+{
+  "name": "Home Screen",
+  "components": {
+    "topBar": {
+      "type": "navigation",
+      "height": "64px",
+      "elements": [
+        {
+          "type": "avatar",
+          "size": "40px",
+          "position": "left"
+        },
+        {
+          "type": "text",
+          "content": "Good morning, Alex",
+          "style": {
+            "fontSize": "20px",
+            "fontWeight": "600",
+            "fontFamily": "Inter"
+          }
+        },
+        {
+          "type": "iconButton",
+          "icon": "settings",
+          "position": "right"
+        }
+      ]
+    },
+    "streakCounter": {
+      "type": "card",
+      "background": "surface",
+      "padding": "16px",
+      "borderRadius": "12px",
+      "elements": [
+        {
+          "type": "icon",
+          "name": "flame",
+          "color": "warning"
+        },
+        {
+          "type": "text",
+          "content": "7 Day Streak!",
+          "style": {
+            "fontSize": "18px",
+            "fontWeight": "600"
+          }
+        }
+      ]
+    },
+    "progressSection": {
+      "type": "section",
+      "margin": "24px 0",
+      "elements": [
+        {
+          "type": "text",
+          "content": "Your Progress",
+          "style": {
+            "fontSize": "24px",
+            "fontWeight": "700"
+          }
+        },
+        {
+          "type": "progressBar",
+          "value": 65,
+          "color": "primary"
+        },
+        {
+          "type": "stats",
+          "items": [
+            {
+              "label": "Words Learned",
+              "value": "247"
+            },
+            {
+              "label": "Hours Practiced",
+              "value": "12.5"
+            }
+          ]
+        }
+      ]
+    },
+    "todayLessons": {
+      "type": "carousel",
+      "title": "Today's Lessons",
+      "items": [
+        {
+          "type": "lessonCard",
+          "title": "Basic Conversations",
+          "duration": "15 min",
+          "progress": 0,
+          "image": "conversation.png"
+        },
+        {
+          "type": "lessonCard",
+          "title": "Essential Vocabulary",
+          "duration": "10 min",
+          "progress": 0,
+          "image": "vocabulary.png"
+        }
+      ]
+    },
+    "quickPractice": {
+      "type": "grid",
+      "columns": 2,
+      "gap": "16px",
+      "items": [
+        {
+          "type": "practiceCard",
+          "title": "Flashcards",
+          "icon": "cards",
+          "color": "secondary"
+        },
+        {
+          "type": "practiceCard",
+          "title": "Speaking",
+          "icon": "microphone",
+          "color": "primary"
+        },
+        {
+          "type": "practiceCard",
+          "title": "Listening",
+          "icon": "headphones",
+          "color": "success"
+        },
+        {
+          "type": "practiceCard",
+          "title": "Writing",
+          "icon": "pencil",
+          "color": "warning"
+        }
+      ]
+    },
+    "bottomNav": {
+      "type": "navigation",
+      "position": "bottom",
+      "height": "64px",
+      "items": [
+        {
+          "icon": "home",
+          "label": "Home",
+          "active": true
+        },
+        {
+          "icon": "book",
+          "label": "Lessons"
+        },
+        {
+          "icon": "practice",
+          "label": "Practice"
+        },
+        {
+          "icon": "profile",
+          "label": "Profile"
+        }
+      ]
+    }
+  },
+  "darkMode": {
+    "background": "#111827",
+    "surface": "#1F2937",
+    "text": {
+      "primary": "#F9FAFB",
+      "secondary": "#9CA3AF"
+    }
+  }
+}
