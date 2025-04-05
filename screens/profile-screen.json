@@ -1,0 +1,136 @@
+{
+  "name": "Profile Screen",
+  "components": {
+    "header": {
+      "type": "header",
+      "style": {
+        "height": "280px",
+        "background": "primary",
+        "padding": "24px"
+      },
+      "elements": [
+        {
+          "type": "avatar",
+          "size": "120px",
+          "image": "user-avatar.jpg"
+        },
+        {
+          "type": "name",
+          "content": "Alex Johnson",
+          "style": {
+            "fontSize": "28px",
+            "fontWeight": "700",
+            "color": "white"
+          }
+        },
+        {
+          "type": "level",
+          "content": "Intermediate Level",
+          "style": {
+            "fontSize": "16px",
+            "color": "rgba(255,255,255,0.9)"
+          }
+        },
+        {
+          "type": "editButton",
+          "position": "top-right",
+          "icon": "edit"
+        }
+      ]
+    },
+    "statistics": {
+      "type": "grid",
+      "columns": 3,
+      "gap": "16px",
+      "margin": "-40px 24px 0",
+      "items": [
+        {
+          "type": "statCard",
+          "value": "47",
+          "label": "Days Streak",
+          "icon": "flame",
+          "color": "warning"
+        },
+        {
+          "type": "statCard",
+          "value": "1,234",
+          "label": "Words Learned",
+          "icon": "book",
+          "color": "success"
+        },
+        {
+          "type": "statCard",
+          "value": "85%",
+          "label": "Accuracy",
+          "icon": "target",
+          "color": "primary"
+        }
+      ]
+    },
+    "achievements": {
+      "type": "section",
+      "title": "Achievements",
+      "padding": "24px",
+      "elements": [
+        {
+          "type": "achievementCard",
+          "title": "Word Master",
+          "description": "Learned 1000+ words",
+          "icon": "trophy",
+          "progress": 100
+        },
+        {
+          "type": "achievementCard",
+          "title": "Perfect Week",
+          "description": "7 days streak",
+          "icon": "star",
+          "progress": 100
+        },
+        {
+          "type": "achievementCard",
+          "title": "Grammar Expert",
+          "description": "Complete all grammar lessons",
+          "icon": "certificate",
+          "progress": 75
+        }
+      ]
+    },
+    "settings": {
+      "type": "list",
+      "padding": "24px",
+      "items": [
+        {
+          "icon": "moon",
+          "label": "Dark Mode",
+          "type": "switch"
+        },
+        {
+          "icon": "bell",
+          "label": "Notifications",
+          "type": "navigation"
+        },
+        {
+          "icon": "globe",
+          "label": "Language",
+          "type": "navigation"
+        },
+        {
+          "icon": "help",
+          "label": "Help & Support",
+          "type": "navigation"
+        }
+      ]
+    }
+  },
+  "darkMode": {
+    "background": "#111827",
+    "surface": "#1F2937",
+    "card": {
+      "background": "#374151"
+    },
+    "text": {
+      "primary": "#F9FAFB",
+      "secondary": "#9CA3AF"
+    }
+  }
+}
