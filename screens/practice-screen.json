@@ -1,0 +1,118 @@
+{
+  "name": "Practice Screen",
+  "components": {
+    "header": {
+      "type": "header",
+      "style": {
+        "padding": "24px",
+        "background": "surface"
+      },
+      "elements": [
+        {
+          "type": "title",
+          "content": "Practice",
+          "style": {
+            "fontSize": "32px",
+            "fontWeight": "700"
+          }
+        },
+        {
+          "type": "searchBar",
+          "placeholder": "Search exercises",
+          "icon": "search"
+        }
+      ]
+    },
+    "categories": {
+      "type": "horizontalScroll",
+      "items": [
+        {
+          "label": "All",
+          "active": true
+        },
+        {
+          "label": "Speaking"
+        },
+        {
+          "label": "Listening"
+        },
+        {
+          "label": "Writing"
+        },
+        {
+          "label": "Grammar"
+        }
+      ]
+    },
+    "exerciseGrid": {
+      "type": "grid",
+      "columns": 2,
+      "gap": "16px",
+      "padding": "24px",
+      "items": [
+        {
+          "type": "exerciseCard",
+          "title": "Daily Conversation",
+          "description": "Practice common phrases",
+          "icon": "chat",
+          "difficulty": "Beginner",
+          "duration": "10 min"
+        },
+        {
+          "type": "exerciseCard",
+          "title": "Pronunciation",
+          "description": "Perfect your accent",
+          "icon": "mic",
+          "difficulty": "Intermediate",
+          "duration": "15 min"
+        },
+        {
+          "type": "exerciseCard",
+          "title": "Vocabulary Quiz",
+          "description": "Test your knowledge",
+          "icon": "book",
+          "difficulty": "Mixed",
+          "duration": "5 min"
+        },
+        {
+          "type": "exerciseCard",
+          "title": "Grammar Challenge",
+          "description": "Master English grammar",
+          "icon": "pencil",
+          "difficulty": "Advanced",
+          "duration": "20 min"
+        }
+      ]
+    },
+    "quickStart": {
+      "type": "section",
+      "title": "Quick Start",
+      "style": {
+        "padding": "24px",
+        "background": "surface"
+      },
+      "elements": [
+        {
+          "type": "button",
+          "variant": "primary",
+          "label": "Random Exercise",
+          "icon": "shuffle"
+        },
+        {
+          "type": "button",
+          "variant": "secondary",
+          "label": "Continue Last Exercise",
+          "icon": "play"
+        }
+      ]
+    }
+  },
+  "darkMode": {
+    "background": "#111827",
+    "surface": "#1F2937",
+    "card": {
+      "background": "#374151",
+      "border": "1px solid rgba(255,255,255,0.1)"
+    }
+  }
+}
