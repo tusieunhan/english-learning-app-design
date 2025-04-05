@@ -1,0 +1,124 @@
+{
+  "name": "Lesson Screen",
+  "components": {
+    "header": {
+      "type": "header",
+      "style": {
+        "height": "200px",
+        "background": "primary",
+        "padding": "24px"
+      },
+      "elements": [
+        {
+          "type": "backButton",
+          "position": "top-left"
+        },
+        {
+          "type": "title",
+          "content": "Basic Conversations",
+          "style": {
+            "fontSize": "28px",
+            "fontWeight": "700",
+            "color": "white"
+          }
+        },
+        {
+          "type": "subtitle",
+          "content": "Learn everyday English conversations",
+          "style": {
+            "fontSize": "16px",
+            "color": "rgba(255,255,255,0.9)"
+          }
+        },
+        {
+          "type": "progressBar",
+          "value": 35,
+          "style": {
+            "background": "rgba(255,255,255,0.2)",
+            "fill": "white"
+          }
+        }
+      ]
+    },
+    "content": {
+      "type": "section",
+      "padding": "24px",
+      "elements": [
+        {
+          "type": "conversationCard",
+          "participants": [
+            {
+              "name": "John",
+              "avatar": "john.png",
+              "message": "Hi! How are you?"
+            },
+            {
+              "name": "Sarah",
+              "avatar": "sarah.png",
+              "message": "I'm good, thanks! And you?"
+            }
+          ],
+          "actions": [
+            {
+              "type": "button",
+              "icon": "play",
+              "label": "Listen"
+            },
+            {
+              "type": "button",
+              "icon": "mic",
+              "label": "Practice"
+            }
+          ]
+        },
+        {
+          "type": "vocabularySection",
+          "title": "Key Vocabulary",
+          "words": [
+            {
+              "word": "How are you",
+              "translation": "Bạn khỏe không?",
+              "audio": "how-are-you.mp3"
+            },
+            {
+              "word": "I'm good",
+              "translation": "Tôi khỏe",
+              "audio": "im-good.mp3"
+            },
+            {
+              "word": "thanks",
+              "translation": "cảm ơn",
+              "audio": "thanks.mp3"
+            }
+          ]
+        }
+      ]
+    },
+    "bottomActions": {
+      "type": "actionBar",
+      "position": "bottom",
+      "height": "80px",
+      "elements": [
+        {
+          "type": "button",
+          "variant": "secondary",
+          "label": "Previous"
+        },
+        {
+          "type": "button",
+          "variant": "primary",
+          "label": "Continue"
+        }
+      ]
+    }
+  },
+  "darkMode": {
+    "header": {
+      "background": "#2563EB"
+    },
+    "content": {
+      "background": "#111827",
+      "surface": "#1F2937"
+    }
+  }
+}
